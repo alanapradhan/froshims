@@ -1,0 +1,25 @@
+LEGEND
+  * [release]
+  * [feature]
+  * [fix]
+  * [improved]
+  * [deprecated]
+
+VERSION 2.0.4
+	* [fix]		Fixed footer protection browser issue
+	* [fix]		Fixed layout issue in featured.php
+	* [fix]		Fixed pixelated thumbnail images issue
+	* [fix]		Fixed custom css, headercode and footercode options
+	* [fix]		Added new custom text widget to handle a no title text widget
+VERSION 2.0.3
+	* [fix]		Fixed theme option error in functions.php
+VERSION 2.0.2
+	* [fix]		Remove unneccessary scripts
+	* [fix]		Fixed banner advertisement
+	* [improved]	Integrates the new theme option panel
+	* [fix]		Replace old settings value to work with new theme option panel
+VERSION 2.0.1
+	* [fix]		Sidebar error caused by Search Widget
+	* [improved]	Revamped Search Widget style and control
+VERSION 2.0
+	* [improved]    Re-coded to have a unified framework for all versions.

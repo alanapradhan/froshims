@@ -1,0 +1,35 @@
+<?
+
+    // require common code
+    require_once("includes/common.php"); 
+
+  <body>
+
+
+<?
+                $uid = $_SESSION["uid"];
+
+                if ($uid != 1 || $uid != 2 || $uid != 3 ||$uid != 4 ||$uid != 5)
+                {
+                        //redirect("http://www.ilikedyouharvard.com/RidesHome/index2.php");
+                }
+      
+?>
+
+
+    <div align="center" style="margin: 10px;">
+<table>
+<tr><a href="index2.php">Home</a></tr>
+<tr><a href="editsched.php">Edit Schedule</a></tr>
+<tr><a href="report.php">Report Win/Foreit</a></tr>
+<tr><a href="teamlist.php">Teams</a></tr>
+</table>
+    </div>    
+
+
+
+         redirect("index2.php");
+//         }
+
+                  
+?>

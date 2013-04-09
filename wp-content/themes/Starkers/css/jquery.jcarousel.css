@@ -1,0 +1,176 @@
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+/*.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}*/
+
+
+/* Slide Show */
+body {
+	font-family:arial;	
+}
+
+img {
+	border:0;
+}
+
+#slideshow-main {
+	width:629px; 
+	float:left; 
+	margin-right:3px;
+}
+
+#slideshow-main ul {
+	margin:0; 
+	padding:0; 
+	width:629px;
+}
+
+#slideshow-main li {
+	width:629px; 
+	height:290px; 
+	display:none;
+	position:relative;
+}
+
+#slideshow-main li.active {
+	display:block !important;
+}
+/*
+
+Subtitle
+
+*/
+#slideshow-main li span.opacity {
+	position:absolute;
+	bottom:0; left:0;
+	display:block; 
+	width:100%;
+	height:60px;
+	background:#000;
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+	z-index:500;
+}
+
+#slideshow-main li span.content {
+	position:absolute;
+	bottom:0; left:0;
+	display:block; 
+	width:100%;
+	height:60px;
+	z-index:1000;
+}
+
+#slideshow-main li span.content h1 {
+	font-size:14px;
+	margin:5px 0;
+	padding:0 10px;;
+	color:#fff;
+}
+
+#slideshow-main li span.content p {
+	font-size:11px;
+	margin:5px 0;
+	padding:0 10px;;
+	color: #fff;
+}
+
+#slideshow-carousel {
+	float:left; 
+	width:206px;
+	position:relative
+}
+
+#slideshow-carousel ul {
+	margin:0; 
+	padding:0;
+	list-style:none;
+}
+
+#slideshow-carousel li {
+	background:#fff; 
+	height:72px; 
+	position:relative
+}
+
+/*#slideshow-carousel li .arrow {
+	left:3px; 
+	top:28px; 
+	position:absolute; 
+	width:20px; 
+	height:40px; 
+	background:url(images/arrow_white.png) no-repeat 0 0; 
+	display:block;
+}*/
+
+#slideshow-carousel li a {
+	background:#000; 
+	display:block; 
+	width:206px; 
+	height:70px;
+}
+
+
+#slideshow-carousel .active {
+	filter:alpha(opacity=100); 
+	-moz-opacity:1.0; 
+	-khtml-opacity: 1.0; 
+	opacity: 1.0;
+}
+
+#slideshow-carousel .faded {
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+}
+
+
+	

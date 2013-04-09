@@ -1,0 +1,61 @@
+<?
+
+    // require common code
+    require_once("includes/commonRequired.php"); 
+
+/*
+$findplayer1 = mysql_query("SELECT * FROM schedule WHERE Game= 'Pingpong' AND 
+EmailSent = 0");
+ 
+while ($row = mysql_fetch_array($findplayer1))
+                  {
+$player1=$row["Team1"];
+$player2=$row["Team2"];
+$date= $row["Date"];
+$time= $row["Time"];
+$location= $row["Location"];
+$gid=$row["gid"];
+
+$getplayer1email = mysql_query("SELECT * FROM captain WHERE TeamName= 
+'$player1'");
+
+$row2 = mysql_fetch_array($getplayer1email);
+$player1email=$row2["Email"];
+$player1Fname=$row2["Fname"];
+
+$getplayer2email = mysql_query("SELECT * FROM captain WHERE TeamName=
+'$player2'");
+
+$row3 = mysql_fetch_array($getplayer2email);
+$player2email=$row3["Email"];
+$player2Fname=$row3["Fname"];
+
+$to = "alana.cool@gmail.com
+$subject = '[FROSHIMS] Your Ping Pong Game has Been Scheduled';
+$message = 'Dear '. $player1Fname. 'Your game is with '. $player2 . ' in ' . 
+$location . 'at '. $time . ' on ' . $date. '.' ;
+$headers = 'From: alana.cool@gmail.com' . "\r\n" .
+    'Reply-To: harvardfroshims@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+
+$to = alana.cool@gmail.com
+$subject = '[FROSHIMS] Your Ping Pong Game has Been Scheduled';
+$message = 'Dear '. $player2Fname. 'Your game is with '. $player1 . ' in ' .
+$location . 'at '. $time . ' on ' . $date. '.' ;
+$headers = 'From: alana.cool@gmail.com' . "\r\n" .
+    'Reply-To: harvardfroshims@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+$result = mysql_query("UPDATE schedule SET EmailSent= 1 WHERE gid='$gid'");
+}
+*/
+
+?>
+
+
+

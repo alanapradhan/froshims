@@ -1,0 +1,35 @@
+<?
+
+    // require common code
+    require_once("includes/common.php"); 
+    
+$rowcount = mysql_real_escape_string($_POST["rowcount"]);
+
+for($i=1; $i <= $rowcount  ;$i++)
+{ 
+$gid = mysql_real_escape_string($_POST["game".$i]);
+$winner = mysql_real_escape_string($_POST["winner".$i]);
+$forfeit = mysql_real_escape_string($_POST["forfeit".$i]); 
+
+if($winner!="")
+{
+         $result = mysql_query("UPDATE schedule SET Win = '$winner' WHERE gid='$gid'");
+}
+
+elseif ($forfeit!="") 
+{
+	$result = mysql_query("UPDATE schedule SET Forfeit = '$forfeit' WHERE gid='$gid'");
+}
+
+else
+{
+i++;
+}
+
+}         
+         
+echo "The rowcount=".$rowcount;
+         //redirect("director.php");
+
+                  
+?>

@@ -1,0 +1,57 @@
+<?
+
+    // require common code
+    require_once("includes/common.php"); 
+
+
+?>
+
+
+
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+               
+                         <html xmlns="http://www.w3.org/1999/xhtml">
+                         
+                                 <body>
+<?                                         
+// escape username and password for safety
+   $GameType = mysql_real_escape_string($_REQUEST['game']);
+    //$numshare = mysql_real_escape_string($_POST["numshare"]);
+
+//echo "the game is: $GameType";
+$result = mysql_query("SELECT * FROM pingpong Where Game= '$GameType'");
+
+           
+print('<td> First Name </td>');
+print('<td> Last Name </td>');
+print('<td> Dorm </td>');
+print('<td> Email</td>');
+print('<td> Phone </td>');
+                  while ($row = 
+mysql_fetch_array($result))
+
+                  {
+$name=$row['Fname'];
+echo "the firstname is: $name"; 
+print('<tr>');
+
+                    print('<td>' . $row["Fname"] .  '</td>');
+print('<td>' . $row["Lname"] .  '</td>');
+
+
+                  }
+
+?>
+
+</table>
+<div style="margin: 10px;">
+                                                          
+                                                              <a 
+                            href="index.php">return to your portfolio</a>
+                                                  </div>
+                                                             
+                                                       </body>
+                                                     </html>
+                                                                    

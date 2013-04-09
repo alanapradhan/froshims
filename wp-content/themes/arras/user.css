@@ -1,0 +1,137 @@
+/* This CSS file is created for you to create or override any of the existing CSS styles used in this theme */
+/*
+*
+*Three column layout adjustment
+*
+*/
+#formHeader {
+	background: #76B900;
+}
+
+body {
+    min-width:1100px;
+}
+#main {
+    width:1100px;
+    margin:0 auto;
+    position:relative;
+}
+#container {
+    width:1100px;
+    float:left;
+    margin:0;
+}
+#content {
+	margin: 0 220px 0 230px;
+    overflow:hidden;
+}
+#primary {
+    width:220px;
+    float:left;
+	margin: 0 0 0 -1100px;
+}
+* html #primary {
+	left: 20px;
+	position: relative;
+}
+#secondary {
+    width:220px;
+    float:left;
+	margin: 0 0 0 -220px;
+}
+#footer {    
+    clear:both;
+}
+#subsidiary {
+    width:1100px;
+    margin:0 auto;
+    overflow:hidden;
+}
+#subsidiary .aside {
+    width:300px;
+    float:left;
+    margin:0 10px 0 10px;
+}
+#subsidiary #third {
+    margin:0 0 0 10px;
+}
+#siteinfo {
+    clear:both;
+    width:940px;
+    margin:0 auto;
+}
+.fixed {
+	width:1100px; 
+	margin:0 auto;
+}
+/*
+*
+* header- banner
+*
+*/
+
+#sched {
+margin:0 0 10px 0;
+}
+
+/*
+
+INPUT
+
+*/
+
+
+input[type="text"] {
+	width: 150px;
+	padding: 0 0 0 10px;
+}
+
+div.curFocus {
+	background: rgba(166, 109, 84, .47);
+
+}
+div#box {
+	background:#0F0;
+	width: 300px;
+	height: 300px;
+	display: none;	
+}
+
+.right {
+	margin: 0 20px;
+}
+
+select{
+	width: 150px;
+	padding: 0 0 0 10px;
+	margin-top: 40px;
+}
+
+select#right {
+	margin: 0 20px;
+}
+
+/*
+
+Info Box 
+
+*/
+
+.infoBox{
+	float: right;
+	width: 176px;
+	height: 79px;
+	background:#FFF;
+	border: 5px solid #b7b5b5;
+	margin: 10px 30px 0 0;
+	display: none;
+	text-align:center;
+}
+
+.team {
+	
+}
+/*.field {
+	float:left;
+	width: 300px;
+}*/

@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	font-size: 100%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #FFFFFF;
+	
+}
+
+hr {
+	margin: 50px;
+  border: 2;
+  width: 80%;
+}
+
+div#page-wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+div#alana {
+height: 20px;
+width: 20px;
+color: red;
+padding: 20px;
+
+}
+
+div.mainContent {
+	width:710px;
+	height: 970px;
+	background: url(../images/bg.jpg) no-repeat;
+	
+}
+div#slideshow-main {
+	margin: 30px 20px 0 90px;
+}
+div#slideshow-carousel {
+margin: 30px 0 0 0;
+}
+
+div#header{
+	background:url(../images/navbar-slice.jpg) repeat-x;
+	height: 261px;
+}
+#logo {
+	width: 341px;
+	height: 217px;
+	background-image: url(../images/logo2.png);
+	margin: 20px 0 0 15px;
+}
+	
+div#contact{
+	float: left;
+	width: 650px;
+	padding: 0 0 30px 65px;
+}
+.singleField {
+width: 400px;
+padding: 0 0 40px 10px;
+}
+div#sidebar {
+}
+#submit{
+	margin: 300px 0 0 270px;
+	
+	}
+
+/*
+
+TOPOGRAPHY
+
+*/
+
+h1 { text-transform: uppercase; font-weight: normal; font-size: 70px; color: #efedec;}
+h2 { text-transform: uppercase; font-weight: normal; font-size: 24px; color: #efedec;}
+h3 { font-weight: normal; font-size: 18px; color: #efedec; padding: 20px 0 3px 0;} 
+
+/*
+
+INPUT
+
+*/
+
+
+input[type="text"] {
+	width: 150px;
+	padding: 0 0 0 10px;
+}
+div.curFocus {
+	background: rgba(166, 109, 84, .47);
+
+}
+div#box {
+	background:#0F0;
+	width: 300px;
+	height: 300px;
+	display: none;	
+}
+
+.right {
+	margin: 0 20px;
+}
+
+select{
+	width: 150px;
+	padding: 0 0 0 10px;
+	margin-top: 40px;
+}
+
+select#right {
+	margin: 0 20px;
+}
+
+/*
+
+Info Box 
+
+*/
+
+.infoBox{
+	float: right;
+	width: 176px;
+	height: 79px;
+	background:#FFF;
+	border: 5px solid #b7b5b5;
+	margin: 10px 30px 0 0;
+	display: none;
+	text-align:center;
+}
+
+.team {
+	display: none;
+}
+/*.field {
+	float:left;
+	width: 300px;
+}*/
+
+	

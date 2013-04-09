@@ -1,0 +1,81 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!-- mashup's CSS -->
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA8igYd929VTmOEMLNjNyP1xQIE4MyTYdaqjM5EsvAZQBbaRMlYRS9jJaf64VoDAABoTCl-_zJ-d13vg" type="text/javascript"></script>
+
+<!-- mashup's JavaScript -->
+<script type="text/javascript">
+
+
+// mashup's geocoder
+var geocoder = null;
+
+
+// mashup's Google Map
+var map = null;
+
+
+
+
+
+function go() {
+geocoder = new GClientGeocoder();
+var address = document.getElementById("q").value;
+if (geocoder) {
+geocoder.getLatLng(address,
+function(point) {
+if (!point) {
+alert(address + " not found");
+} else {
+var lat = point.lat().toFixed(5);
+var lng = point.lng().toFixed(5);
+location.href="save.php?id="+lat+"&id2="+lng+"&id3="+address;
+map.clearOverlays()
+map.setCenter(point, 14);
+var marker = new GMarker(point, {draggable: true});
+map.addOverlay(marker);
+}});
+
+}}
+
+
+
+
+
+
+
+
+</script>
+
+<!-- mashup's title -->
+    <div> Please Enter Your Home Address Ending in Your Zipcode:</div>
+    
+      </head>
+      
+        
+                          
+                              <!-- mashup's form -->
+                                  <div id="form">
+                                        <form action="" method="get" onsubmit="go(); return false;">
+                                                <input autocomplete="off" id="q" size="50" type="text" />
+                                                        <input type="submit" value="Go" />
+                                                              </form>
+                                                                  </div>
+                                                                  
+              
+ 
+ 
+                                                   
+                      
+                        </body>
+                        
+                        </html>
+                        

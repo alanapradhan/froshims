@@ -1,0 +1,201 @@
+<?
+require_once("includes/common.php");
+
+?>
+<form action="editsched2.php" method="get" name="editsched">
+ <table cellspacing="0">
+  <caption>
+   Schedule a Game 
+  </caption>
+  <tr>
+<th scope="col">Game Type</th>    
+<th scope="col">Date</th>
+   <th scope="col">Time</th>
+   <th scope="col">Team 1</th>
+   <th scope="col">Team 2</th>
+  <th scope="col">Location</th> 
+</tr>
+  <tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+					<td><input type="text" name="t1" 
+/></td>
+<td>
+<?
+$result = mysql_query("SELECT * FROM captain");
+
+print('<select name="TeamName"><option value="blank">Select Team 1</option>');
+while ($row = mysql_fetch_array($result))
+{
+$row["TeamName"]=$TeamName;  
+echo ;
+print('<td>' . $row["TeamName"] . '</td>');
+print('<option value="TeamName">' . $row["TeamName"] . '</option>');
+}
+print('</select>');
+
+?>
+</td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr>
+<tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr><tr>
+   <th scope="row"><select name="Game">
+<option value="blank">Select Game Type</option>
+  <option value="Pingpong">Pingpong</option>
+  <option value="Frisbee">Ultimate Frisbee</option>
+  <option value="Flag Football">Flag Football</option>
+  <option value="Soccer">Soccer</option>
+</select></th>
+   <td><input type="text" name="d1"/></td>
+                                        <td><input type="text" name="t1"
+/></td>
+                                        <td><input type="text" name="team11"
+/></td>
+<td><input type="text" name="team21"/></td>
+<td><input type="text" name="l1"/></td>
+  </tr>
+ </table>
+ <input type="submit" class="save" value="Save" />
+</form>

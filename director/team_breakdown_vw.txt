@@ -1,0 +1,27 @@
+create view team_game_vw as 
+select distinct Game, Dorm, TeamName from captain where Type != "I"
+
+create or replace view team_netPointsSum_vw as select distinct team_game_vw.Game,
+team_game_vw.Dorm,
+team_game_vw.TeamName,
+team_winsall_vw.Wcount,
+team_lossesall_vw.Lcount, 
+team_forfeitsall_vw.Fcount,
+((team_winsall_vw.Wcount*20) + (team_lossesall_vw.Lcount*10) + (team_forfeitsall_vw.Fcount*-15)) total 
+from team_game_vw, team_winsall_vw, team_lossesall_vw, team_forfeitsall_vw 
+where team_game_vw.TeamName = team_winsall_vw.TeamName and
+ team_game_vw.TeamName = team_lossesall_vw.TeamName and
+ team_game_vw.TeamName = team_forfeitsall_vw.TeamName
+ group by team_game_vw.TeamName 
+
+create or replace view team_winsall_vw as select team_game_vw.TeamName, IFNULL(team_wins_vw.Wcount, 0) Wcount
+from team_game_vw left join team_wins_vw
+on team_game_vw.TeamName = team_wins_vw.Win
+
+create or replace view team_lossesall_vw as select team_game_vw.TeamName, IFNULL(team_losses_vw.Lcount, 0) Lcount
+from team_game_vw left join team_losses_vw
+on team_game_vw.TeamName = team_losses_vw.Loss
+
+create or replace view team_forfeitsall_vw as select team_game_vw.TeamName, IFNULL(team_forfeits_vw.Fcount, 0) Fcount
+from team_game_vw left join team_forfeits_vw
+on team_game_vw.TeamName = team_forfeits_vw.Forfeit

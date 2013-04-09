@@ -1,0 +1,19 @@
+<?
+
+require_once("includes/common.php");
+
+$winTally = mysql_query("SELECT * FROM dorm_wins_vw" );
+
+while ($row = mysql_fetch_array($winTally)){
+
+$row["wins"];
+
+$j++;
+}
+$result = mysql_query("SELECT Win FROM schedule WHERE Win != '' AND
+Game != 'Pingpong'" );
+
+//print_r($teamarr[16][2]);
+
+//echo $teamarr[0][1];
+?>

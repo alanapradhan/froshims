@@ -1,0 +1,83 @@
+body {
+	  background-color: green;
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ff3333), to(#c10107));
+  
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #ed2024, #c10107);
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, #ed2024, #c10107);
+  
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, #ed2024, #c10107);
+  
+  /* Opera cannot do radial gradients yet */
+ font-family: 'Lusitana', serif;
+}
+h1{color:#d1ae22; padding-top:10px;}
+h1, h2 {text-align:center;}
+h2 {  color: #f1f0ed; font-family: Georgia, Serif;}
+
+#container {
+	
+	width: 320px;
+}
+#content {
+	 width:100%;
+	 height:60%;
+	 
+	background-image: url('images/radial_final_iphone.png') ;
+	 background-repeat: no-repeat;
+}
+h2.content{
+	
+	padding-top: 20px;
+	padding-bottom:10px;
+	
+	
+	
+}
+a {font-size: 2px;}
+
+.btn {
+   border-top: 1px solid #ff9c9c;
+   background: #ff3333;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff3333), to(#ff3333));
+   background: -webkit-linear-gradient(top, #ff3333, #ff3333);
+   background: -moz-linear-gradient(top, #ff3333, #ff3333);
+   background: -ms-linear-gradient(top, #ff3333, #ff3333);
+   background: -o-linear-gradient(top, #ff3333, #ff3333);
+    /*Transition*/
+    -webkit-transition: -webkit-box-shadow 0.5s ease-out;;
+    -moz-transition: -moz-box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+   padding: 10px 20px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font: bold 36px Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+   text-decoration: none;
+   vertical-align: middle;
+   margin-top: 283px;
+   }
+.btn:hover {
+ -moz-box-shadow: 0px 0px 15px #f7f7f7;
+    -webkit-box-shadow: 0px 0px 15px #f7f7f7;
+    box-shadow: 0px 0px 15px #f7f7f7;
+  
+   
+   
+   }
+
